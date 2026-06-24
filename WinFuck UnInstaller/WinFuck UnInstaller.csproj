@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+	  <TargetFramework>net10.0-windows</TargetFramework>
+    <RootNamespace>WinFuck_UnInstaller</RootNamespace>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Platforms>x64</Platforms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+	<InvariantGlobalization>true</InvariantGlobalization>
+	<PublishTrimmed>true</PublishTrimmed>
+    <DebugType>none</DebugType>
+	<Optimize>true</Optimize>
+	<NoWarn>$(NoWarn);CA1416</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="menu.mp3" />
+  </ItemGroup>
+	
+	<ItemGroup>
+		<TrimmerRootAssembly Include="NAudio" />
+		<TrimmerRootAssembly Include="NAudio.Core" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.3.0" />
+  </ItemGroup>
+
+</Project>
