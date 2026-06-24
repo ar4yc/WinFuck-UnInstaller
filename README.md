@@ -1,6 +1,7 @@
 # WinFuck-UnInstaller
-
 A TUI tool to reanimate your Windows system after using [WinFuck](https://github.com/ar4yc/WinFuck-CSharp), which can also be used to clean up after other malware.
+
+<img width="517" height="459" alt="изображение" src="https://github.com/user-attachments/assets/88f3f64c-5557-4232-9d3b-8ac8833c7536" />
 
 ## Disclaimer & Safety Warning
 
